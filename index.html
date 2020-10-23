@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulaire</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <script src="js/libs/jquery/jquery.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <div>Formulaire d'Inscription</div>
+        <input id="btnInscription" type="button"  title="Inscription" name="Inscription">
+        <div id="idFormulaire">
+            <div>
+                <h4>Formualaire</h4>
+                <form id="contact" action="mailto:gregoireduflo@gmail.com" method="post">
+                    <div >
+                        <fieldset>
+
+                            <input name="Nom " type="text" id="IdNom" placeholder="Votre Nom" required="">
+                        </fieldset>
+                    </div>
+                    <div >
+                        <fieldset>
+                            <input name="Prénom " type="text" id="idPrenom" placeholder="Votre Prénom" required="">
+                        </fieldset>
+                    </div>
+                    <div >
+                        <fieldset>
+                            <input name="Email " type="email" id="idEmail" placeholder="Votre adresse eMail" required="">
+                        </fieldset>
+                    </div>
+                    <div >
+                        <fieldset>
+                            <textarea name="Message " rows="6" id="idMessage" placeholder="Votre message" required=""></textarea>
+                        </fieldset>
+                    </div>
+                    <div >
+                        <fieldset>
+                            <button type="submit" id="btnEnvoyer">Envoyer</button>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <p id="idResultat"></p>
+        <script src="js/Formulaire.js" type="text/javascript"></script>
+
+    </body>
+
+</html>
